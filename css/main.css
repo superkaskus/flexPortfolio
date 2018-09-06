@@ -15,7 +15,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Navigation style starts here*/
+header {
+  background: rgb(73, 149, 155);
+}
+
+/* Logo style starts here*/
 .brand a {
   background: white;
   text-decoration: none;
@@ -23,6 +27,9 @@ body {
   margin: 0 0 0 5px;
 }
 
+/***************Size 800- ***************/
+/* Logo brand Media Query Starts here*/
+/*************************************/
 @media all and (max-width: 800px) {
   .brand a {
     display: block;
@@ -31,6 +38,7 @@ body {
   }
 }
 
+/* Navigation section style starts here*/
 .nav--section {
   display: flex;
   margin: 0;
@@ -68,16 +76,36 @@ body {
   background: red;
 }
 
-/* Media query starts here*/
+/***************Size 800- ***************/
+/* Navigation section Media Query Starts here*/
+/*************************************/
 @media all and (max-width: 800px) {
+  .nav-cnt-1 {
+    flex: 1;
+  }
+
+  .nav-cnt-2 {
+    flex: 2;
+  }
+}
+
+/***************Size 600- ***************/
+/* Navigation section Media Query Starts here*/
+/*************************************/
+@media all and (max-width: 600px) {
   .nav--section {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
   }
 
   .nav-cnt-1 {
+    flex: 1;
     display: flex;
     justify-content: center;
+  }
+
+  .nav-cnt-2 {
+    flex: 2;
   }
 
   .nav-list {
@@ -94,8 +122,58 @@ body {
   }
 }
 
-/* main styles starts here*/
+/* Hero section style starts here*/
+.heading--section {
+  margin: 0 auto;
+  max-width: 1024px;
+  background: rgb(60, 117, 121);
+}
+
+.heading-container {
+  display: flex;
+  padding: 200px 0;
+}
+
+.heading-container h1 {
+  margin: auto;
+  color: white;
+  font-weight: 700;
+  font-size: 2.5em;
+  max-width: 60%;
+}
+
+/***************Size 800- ***************/
+/* Hero section Media Query Starts here*/
+/*************************************/
+@media all and (max-width: 800px) {
+  .heading--section {
+    margin: 0 auto;
+    max-width: 1024px;
+    background: rgb(60, 117, 121);
+  }
+
+  .heading-container {
+    padding: 150px 0;
+  }
+
+  .heading-container h1 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    max-width: 90%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .heading-container h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+/* main section styles starts here*/
 main {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
