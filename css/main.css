@@ -194,6 +194,7 @@ main {
 .about-text {
   flex: 1;
   padding: 5px;
+  margin: 0px;
 }
 
 .about-text h2 {
@@ -206,34 +207,32 @@ main {
 
 .about-image {
   flex: 1;
-  background: rgb(112, 100, 219);
-  margin: 0px;
+  margin-bottom: -4px;
+  max-width: 100%;
 }
 
 .about-image img {
   max-width: 100%;
-  height: auto;
-  margin-bottom: -4px;
 }
 
 /***************Size 800- ***************/
-/* Navigation section Media Query Starts here*/
+/* about section Media Query Starts here*/
 /*************************************/
 @media all and (max-width: 800px) {
   .about--section {}
 
   .about-text {
-    flex: 1;
+    width: 100%;
     padding: 10px;
   }
 
   .about-image {
-    flex: 1;
+    max-width: 100%;
   }
 }
 
 /***************Size 600- ***************/
-/* Navigation section Media Query Starts here*/
+/* about section Media Query Starts here*/
 /*************************************/
 @media all and (max-width: 600px) {
   .about--section {
@@ -242,19 +241,24 @@ main {
   }
 
   .about-text {
-    flex: 1;
+    width: 100%;
     order: 1;
     padding: 10px;
+    padding: 40px 10px 50px 10px;
   }
 
   .about-image {
-    flex: 2;
+    width: 100%;
   }
 }
 
 /****** PORTFOLIO SECTION STARTS HERE*******/
+.article-container {
+  background: rgb(112, 54, 104);
+}
+
 .portfolio--section {
-  background: rgb(33, 70, 104);
+  background: rgb(95, 51, 89);
 }
 
 .portfolio--section h2 {
@@ -266,18 +270,18 @@ main {
 
 .portfolio-container {
   display: flex;
-  flex-flow: wrap;
-  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .portfolio-container div {
-  background: url("../Assets/images/numbers-02.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex: 1;
-  min-width: 341px;
-  height: 341px;
-  ba
+  margin: 0 auto;
+  width: calc(100% / 3);
+  height: auto;
+}
+
+.portfolio-container div img {
+  max-width: 100%;
+  display: block;
 }
 
 /***************Size 800- ***************/
@@ -285,7 +289,7 @@ main {
 /*************************************/
 @media all and (max-width: 800px) {
   .portfolio-container div {
-    flex: 1;
+    width: calc(100% / 2);
   }
 }
 
@@ -299,6 +303,18 @@ main {
   }
 
   .portfolio-container div {
-    flex: 1;
+    width: 100%;
   }
+}
+
+/****** footer SECTION STARTS HERE*******/
+footer {
+  margin: auto;
+  padding: 10px;
+  background: rgb(51, 46, 102);
+}
+
+footer p {
+  color: rgb(189, 137, 186);
+  text-align: center;
 }
