@@ -306,6 +306,53 @@ main {
   }
 }
 
+/****** SOCIAL SECTION STARTS HERE*******/
+.social--container {
+  display: flex;
+}
+
+.social--container div {
+  flex: 1;
+  padding: 30px 20px;
+}
+
+.social--container div i {
+  color: white;
+  font-size: 2em;
+}
+
+.email {
+  background: rgb(255, 60, 0);
+}
+
+.email:hover {
+  background: rgb(173, 40, 0);
+}
+
+.twitter {
+  background: rgb(0, 162, 255);
+}
+
+.twitter:hover {
+  background: rgb(0, 122, 192);
+}
+
+.behance {
+  background: rgb(0, 81, 255);
+}
+
+.behance:hover {
+  background: rgb(0, 61, 192);
+}
+
+.codepen {
+  background: rgb(34, 34, 34);
+}
+
+.codepen:hover {
+  background: rgb(15, 15, 15);
+}
+
 /****** footer SECTION STARTS HERE*******/
 footer {
   margin: auto;
@@ -316,4 +363,5 @@ footer {
 footer p {
   color: rgb(189, 137, 186);
   text-align: center;
+  font-weight: lighter;
 }
